@@ -11,12 +11,13 @@ branching to practice a real development workflow.
 4. Visit `http://localhost:5000`
 
 ## API Endpoint Reference
-Endpoint	Method	Description	Example Response
-`/`	home()	Welcome message	Welcome to the App
-`/health`	health()	Health check	App is running
-`/vote/<name>`	vote(name)	Casts a vote for `name`	Vote recorded for Alice. Total votes: 1
-`/results`	results()	Returns all vote counts	{"Alice": 2, "Bob": 1}
-`/reset`	reset()	Clears all votes	All votes have been reset
+| Endpoint | Method | Description | Example Response |
+|---|---|---|---|
+| `/` | GET | Welcome message | `Welcome to the App` |
+| `/health` | GET | Health check | `App is running` |
+| `/vote/<name>` | GET | Casts a vote for `name` | `Vote recorded for Alice. Total votes: 1` |
+| `/results` | GET | Returns all vote counts | `{"Alice": 2, "Bob": 1}` |
+| `/reset` | GET | Clears all votes | `All votes have been reset` |
 
 ## Git Workflow
 All development happened on the `dev` branch. Once a feature was complete
